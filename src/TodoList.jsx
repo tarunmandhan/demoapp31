@@ -21,8 +21,9 @@ const TodoList = () => {
           </Button>
           <br />
           <ol>
-            {newItem.map(() => {  // store input text mapping in newItem
-              return <li>{items}</li>;
+            {newItem.map((val) => {
+              // store input text mapping in newItem
+              return <li>{val}</li>;
             })}
           </ol>
           <br />
