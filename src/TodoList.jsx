@@ -3,7 +3,8 @@ import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
 
 const TodoList = () => {
-  const [items, setItems] = useState("buy 1kg apple");
+  const [items, setItems] = useState("");
+  const [newItem, setNewItem] = useState([]); //create new empty array to store input Text
   const itemEvent = (event) => {
     setItems(event.target.value);
   };
@@ -20,7 +21,9 @@ const TodoList = () => {
           </Button>
           <br />
           <ol>
-            <li>{items}</li>
+            {newItem.map(() => {  // store input text mapping in newItem
+              return <li>{items}</li>;
+            })}
           </ol>
           <br />
         </div>
