@@ -18,8 +18,8 @@ body {
 
 .center_div {
   width: 25%;
-  height: 70vh;
-  background-color: #f4f4f4;
+  height: 80vh;
+  background-color: #cfd4cfec;
   box-shadow: 5px 5px 25px-5px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
@@ -45,7 +45,7 @@ input {
   background: transparent;
   font-size: 20px;
   font-weight: 500;
-  width: 70%;
+  width: 60%;
   border-bottom: 2px solid #8566aa;
   outline: none;
   margin-right: 20px;
@@ -68,12 +68,12 @@ input {
 /*the add symbol inside the button in app comp*/
 
 .MuiSvgIcon-root {
-  width: 2rem !important;
-  height: 2rem !important;
+  width: 1rem !important;
+  height: 1rem !important;
 }
 ol {
   margin-top: 30px;
-  /*margin-right: 50px; */
+  /* margin-right: 50px; */
 }
 
 ol li {
@@ -96,11 +96,11 @@ ol li {
   align-items: center;
 }
 
-.todo_style.deletelcon {
+.todo_style .deleteIcon {
   width: 25px;
   height: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   background-color: #8566aa;
   border-radius: 50%;
@@ -110,7 +110,7 @@ ol li {
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
-.todo_style.deletelcon:hover {
+.todo_style .deleteIcon:hover {
   background-color: transparent;
   color: crimson;
   box-shadow: 5px 5px 15px -5px rgba(255, 0, 0, 0.5);
