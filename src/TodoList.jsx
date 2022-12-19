@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
+import ListComp from "./ListComp";
 
 const TodoList = () => {
   const [item, setItem] = useState("");
@@ -34,9 +35,9 @@ const TodoList = () => {
           </Button>
           <br />
           <ol>
-            {newItem.map((val) => {
+            {newItem.map((val, index) => {
               // Display input text one by one using mapping method
-              return <li>{val}</li>;
+              return (<li>{val}</li>), (<ListComp key={index} text={val} />);
             })}
           </ol>
           <br />
